@@ -19,8 +19,10 @@ body{
     padding: 0;
     margin: 0;
     font-style: 16px;
-    font-family: "Arial" ,sans-serif;
+    font-weight: 400;
+    font-family: "Roboto Condensed", "Arial" ,"sans-serif";
     line-height: 1.5;
+    background-color: #222;
 }
 
 .img{
@@ -58,35 +60,54 @@ body{
     align-items: center;
     width: 100%;
     max-width: 600px;
+    padding: 24px;
     background-image: url(../img/left-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
 }
+
 .hero-content {
     max-width: 285px;
 }
+
 .hero-heading {
     margin-top: 0;
     margin-bottom: 24px;
     font-style: 24px;
+    font-family: "Bebas Neue","Arial" ,"sans-serif" ;
+    font-weight: 400;
     line-height: normal;
+    font-size: 24px;
+    line-height: 29px;
     letter-spacing: 2px;
-    color: #fff;
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
 }
+
 .hero-link {
     display: inline-block;
-    background-color: #1e90ff;
-    color: #fff;
+    background-color: rgb(30, 144, 255);
+    color: rgb(255, 255, 255);
+    font-family: "Bebas Neue","Arial" ,"sans-serif" ;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+
+.hero-link:hover{
+    background-color:rgba(30, 144, 255, 0.8) ;
+}
+
+.hero-link:active{
+    background-color:rgba(30, 144, 255, 0.6) ;
+}
+
 .hero-link-inner {
     display: flex;
     padding: 12px 24px;
 }
+
 .hero-link-inner::before {
     width: 20px;
     height: 20px;
@@ -96,6 +117,149 @@ body{
     background-position: center center;
     content:"";
 }
+
+/* latest-videos */
+.latest-videos {
+    padding: 54px;
+    width: 100%;
+    min-width: 600px;
+    background-color: rgb(255, 255, 255);
+}
+
+.latest-videos-heading {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-family:"Bebas Neue" "Arial" sans-serif;
+    font-size: 24px;
+    line-height: normal;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.latest-videos-divider {
+    border: 0;
+    height: 1px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    background-color: rgb(153, 153, 153);
+}
+
+.latest-videos-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 24px;
+}
+
+.latest-videos-item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+/* items */
+.item-latest-videos {
+    display: flex;
+}
+
+.item-latest-videos-img {
+    width: 160px;
+    height:auto;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.item-latest-videos-info {
+    padding: 16px;
+}
+
+.item-latest-videos-heading {
+    margin-top: 0;
+    font-family:"Bebas Neue" "Arial" sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+
+.item-latest-videos-link {
+    color: rgb(34, 34, 34);
+    display: inline-block;
+    text-decoration: none;
+}
+
+.item-latest-videos-link:hover{
+    color: rgb(30, 144, 255);
+}
+
+.item-latest-videos-link:hover{
+    opacity: 0.6;
+}
+
+.item-latest-videos-meta {
+    display: flex;
+    align-items: center;
+    color:#888 ;
+    font-size: 14px;
+    line-height: normal;
+
+}
+
+.item-latest-videos-pa {
+    display: flex;
+    align-items: center;
+    margin-right: 14px;
+}
+
+.item-latest-videos-pa::before{
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+    background-image:url(../img/icon-clock.svg) ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    content:"" ;
+}
+
+.item-latest-videos-views {
+    display: flex;
+    align-items: center;
+    /* margin-right: 14px; */
+}
+
+.item-latest-videos-views::before{
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+    background-image:url(../img/icon-clock.svg) ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    content:"" ;
+}
+
+.load-more-button{
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 0;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    background-color: #1e90ff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.load-more-button:hover{
+    background-color: rgb(30, 144, 255, 0.8);
+}
+
+.load-more-button:hover{
+    background-color: rgb(30, 144, 255, 0.6);
+}
+
 
 /* retina bg */
 
